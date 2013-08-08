@@ -361,7 +361,6 @@ ul.sidebar li.widget_sociallinks a.delicious {
 #content .post, #content .page {
 	padding:0px 0px 1px 0px;
 	margin:0px 0px 50px 0px;
-	border-bottom:1px dotted #4C4C4C;
 }
 #content .post p, #content .page p {
 	padding:0px 0px 15px 0px;
@@ -443,6 +442,7 @@ ul.sidebar li.widget_sociallinks a.delicious {
 	font-style:italic;
 	line-height:18px;
 	padding:7px 0px 10px 0px;
+	text-align: center;
 }
 #content object,
 #content embed,
@@ -454,7 +454,6 @@ ul.sidebar li.widget_sociallinks a.delicious {
 #content .post p.meta, #content .page p.meta {
 	margin:15px 0px 0px 0px;
 	padding:10px 0px 5px 0px;
-	background:url(images/meta-border.jpg) 0 0 no-repeat;
 	font-size:12px;
 	line-height:19px;
 	clear:both;
@@ -721,7 +720,6 @@ h1.archive strong {
 #page {
 	margin-bottom:50px;
 	padding:0px 0px 6px 0px;
-	border-bottom:1px dotted #4C4C4C;
 }
 #page h1 {
 	padding:0px 0px 20px 0px;
