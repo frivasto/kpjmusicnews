@@ -22,7 +22,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 	<nav id="top-navigation" class="main-navigation" role="navigation">
 		<div class="clearfix container">
 			<?php wp_nav_menu( array( 'container_class' => 'sf-menu', 'theme_location' => 'top' ) ); ?>
@@ -44,11 +43,6 @@
 		<?php endif; ?>
 	<!-- #masthead --></header>
 
-	<nav id="main-navigation" class="container main-navigation" role="navigation">
-		<a href="#main-navigation" class="nav-open">Menu</a>
-		<a href="#" class="nav-close">Close</a>
-		<?php wp_nav_menu( array( 'container_class' => 'sf-menu', 'theme_location' => 'main' ) ); ?>
-	<!-- #main-navigation --></nav>
-
+	
 	<div id="main" class="site-main">
 		<div class="clearfix container">

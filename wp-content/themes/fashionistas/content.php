@@ -9,12 +9,8 @@
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry-meta clearfix">
 			<?php athemes_posted_on(); ?>
-
-			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="comments-link"> <?php comments_popup_link( __( 'Leave a Comment', 'athemes' ), __( '1 Comment', 'athemes' ), __( '% Comments', 'athemes' ) ); ?></span>
-			<?php endif; ?>
 		<!-- .entry-meta --></div>
 		<?php endif; ?>
 	<!-- .entry-header --></header>
@@ -40,13 +36,13 @@
 
 	<?php endif; ?>
 
-	<footer class="entry-meta entry-footer">
+	<footer class="entry-meta entry-footer clearfix">
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<?php
 				$categories_list = get_the_category_list( __( ', ', 'athemes' ) );
 				if ( $categories_list && athemes_categorized_blog() ) :
 			?>
-			<span class="cat-links">
+			<span class="cat-links pull-right">
 				<?php printf( __( '<i class="ico-folder"></i> %1$s', 'athemes' ), $categories_list ); ?>
 			</span>
 			<?php endif; ?>
@@ -55,7 +51,7 @@
 				$tags_list = get_the_tag_list( '', __( ', ', 'athemes' ) );
 				if ( $tags_list ) :
 			?>
-			<span class="tags-links">
+			<span class="tags-links pull-right">
 				<?php printf( __( '<i class="ico-tags"></i> %1$s', 'athemes' ), $tags_list ); ?>
 			</span>
 			<?php endif; ?>
